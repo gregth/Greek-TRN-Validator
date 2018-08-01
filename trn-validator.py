@@ -24,7 +24,6 @@ def is_valid_trn(trn):
         sum += int(digit) * power
 
     checksum = (sum % 11) % 10
-    print checksum
     if int(trn[8]) == checksum:
         return True
     return False
